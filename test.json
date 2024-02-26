@@ -1,0 +1,46 @@
+{
+    "isSkipAgentDeployment": false,
+    "isSkipInjectFailures": false,
+    "targetMachines": [
+        {
+            "hostname": "632152171732",
+            "username": "asvdhasd",
+            "password": "asdjasdj",
+            "type": "linux",
+            "IsDeployAgent": true
+        }
+    ],
+    "experiments": [
+        {
+            "attackType": "cpu",
+            "attackPercentage": 50,
+            "attackDuration": 20,
+            "hostName": "10.48.133.217",
+            "sleepTime": 0,
+            "steadyState": [
+                {
+                    "type": "pre",
+                    "hostname": "10.48.133.217",
+                    "metrics": [
+                        {
+                            "type": "cpu",
+                            "thresholdPercentage": 70,
+                            "condition": "lt"
+                        }
+                    ]
+                },
+                {
+                    "type": "post",
+                    "hostname": "10.48.133.217",
+                    "metrics": [
+                        {
+                            "type": "cpu",
+                            "thresholdPercentage": 70,
+                            "condition": "lt"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
